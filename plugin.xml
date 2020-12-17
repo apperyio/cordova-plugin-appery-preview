@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="cordova-plugin-appery-preview"
+  version="0.0.1">
+  <name>Appery.io Preview</name>
+  <description>
+    Cordova / Phonegap plugin for using Appery.io preview resources
+  </description>
+  <license>MIT</license>
+  <keywords>appery,cordova</keywords>
+  <repo>https://github.com/apperyio/cordova-plugin-apperyio-preview</repo>
+  <issue>https://github.com/apperyio/cordova-plugin-apperyio-preview/issues</issue>
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+
+  <!--android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="CordovaPreviewPlugin">
+        <param name="android-package" value="io.appery.plugin.CordovaPreviewPlugin" />
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+    
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.INTERNET" />
+    </config-file>
+    
+    <source-file src="src/android/io/appery/plugin/CordovaPreviewPlugin.java" target-dir="src/io/appery/plugin" />
+  </platform>
+</plugin>

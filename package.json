@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-appery-preview",
+  "version": "0.0.1",
+  "description": "Cordova / Phonegap plugin for using Appery.io preview resources",
+  "cordova": {
+    "id": "cordova-plugin-appery-preview",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apperyio/cordova-plugin-apperyio-preview.git"
+  },
+  "keywords": [
+    "cordova",
+    "device",
+    "appery",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Andrii Iakovenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apperyio/cordova-plugin-apperyio-preview/issues"
+  },
+  "homepage": "https://appery.io"
+}
